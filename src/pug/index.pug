@@ -6,6 +6,8 @@ block page
   h1 Main Page
   ul
     each item in news
-      li= item.name
+      li
+        h4= item.name
+        span= item.text
 
   include ./chunk/footer

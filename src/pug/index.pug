@@ -1,13 +1,4 @@
 extends ./layout/app
 
 block page 
-  include ./chunk/header
-
-  h1 Main Page
-  ul
-    each item in news
-      li
-        h4= item.name
-        span= item.text
-
-  include ./chunk/footer
+  include ./include/home
